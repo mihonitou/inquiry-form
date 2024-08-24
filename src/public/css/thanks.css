@@ -1,0 +1,54 @@
+/* 全体のスタイル */
+.thanks-page {
+    width: 1381px;
+    height: 365px;
+    margin: 0 auto; /* 中央揃え */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* バックグラウンドのThank you文字 */
+.thanks-page::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: #F5C6C6; /* とても淡い赤みのあるグレー */
+    z-index: 0;
+    white-space: nowrap;
+    opacity: 0.3; /* 文字を薄く表示して模様のようにする */
+}
+
+/* 中央のテキスト */
+.thanks-page h2 {
+    color: #A52A2A; /* 赤みのあるグレー */
+    font-size: 36px;
+    z-index: 1; /* バックグラウンドのThank you文字より前に表示 */
+    margin-bottom: 20px;
+}
+
+/* HOMEボタン */
+.thanks-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5A5A5A; /* 濃いグレー */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 1; /* バックグラウンドのThank you文字より前に表示 */
+    transition: background-color 0.3s;
+}
+
+/* HOMEボタンホバー時 */
+.thanks-page a:hover {
+    background-color: #333; /* ホバー時にさらに濃く */
+}

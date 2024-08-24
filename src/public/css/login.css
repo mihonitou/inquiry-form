@@ -1,0 +1,99 @@
+/* 全体のコンテナ（外側の背景） */
+.login-page {
+    background-color: #A52A2A; /* 赤みのあるグレー */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ページ全体をカバー */
+    margin: 0;
+    padding: 0;
+}
+
+/* 中央の白いボックス */
+.login-container {
+    background-color: white; /* 背景色を白に設定 */
+    width: 445px;
+    height: 396px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ロゴとして使用するh2タグのスタイル */
+.login-logo {
+    font-size: 36px; /* ロゴとしてのフォントサイズ */
+    color: #A52A2A; /* ロゴの色を赤みのあるグレーに設定 */
+    margin-bottom: 30px;
+    text-align: center; /* テキストを中央に配置 */
+}
+
+
+
+
+/* フォームラベルのスタイル */
+.login-container label {
+    font-size: 18px;
+    color: #5A5A5A; /* 赤みのある濃いグレー */
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+/* 入力フィールドのスタイル */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #D3D3D3; /* 薄いグレー */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5A5A5A; /* 赤みのある濃いグレー */
+    box-sizing: border-box;
+}
+
+/* プレースホルダーのスタイル */
+.login-container input::placeholder {
+    color: #C07070; /* 淡い赤みのあるグレー */
+}
+
+/* ログインボタンのスタイル */
+.login-container button {
+    width: 120px;
+    height: 46px;
+    background-color: #5A5A5A; /* 濃いグレー */
+    color: white; /* ボタンの文字を白に設定 */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* ボタンのホバー時のスタイル */
+.login-container button:hover {
+    background-color: #333; /* ボタンの背景色をさらに暗くする */
+}
+
+.error-messages {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.error-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.error-messages li {
+    margin-bottom: 5px;
+}

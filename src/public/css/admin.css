@@ -1,0 +1,217 @@
+/* 管理画面の全体スタイル */
+.admin-container {
+    font-family: Arial, sans-serif;
+    color: #A52A2A; /* 文字色 */
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Adminロゴ */
+.admin-logo {
+    font-size: 36px;
+    color: #A52A2A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* フォームのスタイル */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.form-group input[type="text"] {
+    width: 314.43px;
+    height: 26px;
+}
+
+.form-group select#gender {
+    width: 102.48px;
+    height: 50px;
+}
+
+.form-group select#category_id {
+    width: 223.04px;
+    height: 56px;
+}
+
+.form-group input#date {
+    width: 148.87px;
+    height: 50px;
+}
+
+.search-button {
+    width: 102.48px;
+    height: 50px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-button {
+    width: 102.48px;
+    height: 50px;
+    background-color: #c07070;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* エクスポートボタンとページネーション */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.export-button {
+    width: 48px;
+    height: 39px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination {
+    width: 219px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #808080;
+    color: white;
+    border-color: #808080;
+}
+
+/* テーブルのスタイル */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th {
+    background-color: #A52A2A;
+    color: white;
+    padding: 8px;
+}
+
+.results-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.detail-button {
+    width: 76px;
+    height: 39px;
+    color: #ccc;
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* モーダルウィンドウのスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 805px;
+    height: 858px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #A52A2A;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal-content label {
+    color: #A52A2A;
+    display: block;
+    margin-top: 20px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    color: #A52A2A;
+    background-color: #F5F5F5;
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+    color: #C07070;
+}
+
+.modal-content .delete-button {
+    width: 76px;
+    height: 39px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+/* カレンダーのスタイル */
+.flatpickr-calendar {
+    width: 221px;
+    height: 280px;
+}
+
+.flatpickr-day.today {
+    background-color: blue;
+    color: white;
+}
+
+.flatpickr-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.flatpickr-footer .flatpickr-clear {
+    color: blue;
+    cursor: pointer;
+}
+
+.flatpickr-footer .flatpickr-today {
+    color: blue;
+    cursor: pointer;
+}

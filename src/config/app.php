@@ -134,7 +134,7 @@ return [
     |
     */
 
-    'providers' => [
+    'providers' => [Laravel\Fortify\FortifyServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...

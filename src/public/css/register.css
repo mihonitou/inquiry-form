@@ -1,0 +1,86 @@
+/* ページ全体の背景 */
+body {
+    background-color: #A52A2A; /* 外側の背景色を赤みのあるグレーに設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* フォーム全体のコンテナ */
+.form-container {
+    background-color: white; /* フォームの背景色を白に設定 */
+    width: 736px;
+    height: 644px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ロゴとして使用するh2タグのスタイル */
+.register-logo {
+    font-size: 36px; /* ロゴとしてのフォントサイズ */
+    color: #A52A2A; /* ロゴの色を赤みのあるグレーに設定 */
+    margin-bottom: 30px;
+    text-align: center; /* テキストを中央に配置 */
+}
+
+
+/* フォームの各入力フィールド */
+.form-container div {
+    width: 445px;
+    margin-bottom: 30px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* ラベルの色を濃いグレーに設定 */
+}
+
+.form-container input {
+    width: 100%;
+    height: 102px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* 薄いグレーの枠線 */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* 登録ボタンのスタイル */
+.form-container button {
+    width: 160px;
+    height: 46px;
+    background-color: #808080; /* ボタンの背景色を濃いグレーに設定 */
+    color: white; /* ボタンの文字色を白に設定 */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #666666; /* ボタンの背景色を少し暗くするホバー効果 */
+}
+
+.error-messages {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.error-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.error-messages li {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,116 @@
+/* 全体のコンテナ（外側の背景） */
+.contact-page {
+    background-color: #A52A2A; /* 赤みのあるグレー */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ページ全体をカバー */
+    margin: 0;
+    padding: 0;
+}
+
+/* 中央の白いボックス */
+.contact-container {
+    background-color: white; /* 背景色を白に設定 */
+    width: 972px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* ロゴとして使用するh2タグのスタイル */
+.contact-logo {
+    font-size: 36px; /* ロゴとしてのフォントサイズ */
+    color: #A52A2A; /* ロゴの色を赤みのあるグレーに設定 */
+    margin-bottom: 30px;
+    text-align: center; /* テキストを中央に配置 */
+}
+
+
+/* フォームラベルのスタイル */
+.contact-container label {
+    font-size: 16px;
+    color: #A52A2A; /* 赤みのある濃いグレー */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* 入力フィールドのスタイル */
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="tel"],
+.contact-container select,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #D3D3D3; /* 薄いグレー */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5A5A5A; /* 赤みのある濃いグレー */
+    box-sizing: border-box;
+}
+
+/* フォームフィールドのグリッド配置 */
+.contact-container .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* フォーム内の各エリアのスタイル */
+.contact-container .name-area,
+.contact-container .gender-area,
+.contact-container .email-area,
+.contact-container .tel-area,
+.contact-container .address-area,
+.contact-container .building-area,
+.contact-container .category-area,
+.contact-container .detail-area {
+    width: 967.39px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container .gender-area {
+    width: 737.06px;
+}
+
+.contact-container .detail-area textarea {
+    height: 129px;
+}
+
+/* ラジオボタンのスタイル */
+.contact-container .gender-area input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact-container .gender-area label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    color: #C07070; /* 淡い赤みのあるグレー */
+}
+
+/* 確認画面ボタンのスタイル */
+.contact-container button {
+    width: 160px;
+    height: 46px;
+    background-color: #5A5A5A; /* 濃いグレー */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* ボタンのホバースタイル */
+.contact-container button:hover {
+    background-color: #333;
+}
